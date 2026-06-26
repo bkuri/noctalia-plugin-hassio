@@ -1,0 +1,11 @@
+[[plugin]]
+id = "bkuri/hassio"
+name = "Home Assistant"
+version = "1.0.0"
+author = "bkuri"
+license = "MIT"
+icon = "home"
+description = "Monitor and control Home Assistant entities from the bar."
+min_noctalia = "5.0.0"
+tags = ["home-assistant", "iot", "smart-home"]
+dependencies = ["python-websockets"]
