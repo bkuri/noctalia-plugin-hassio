@@ -1,0 +1,46 @@
+id = "noctalia/hassio"
+name = "Home Assistant"
+version = "0.1.0"
+min_noctalia = "5.0.0"
+author = "bk"
+license = "MIT"
+dependencies = []
+tags = ["home-assistant", "iot", "utility"]
+icon = "home"
+description = "Monitor and control Home Assistant entities from the bar. Requires the ha-bridge companion script and python3-websockets."
+
+# ── Plugin-level settings (shared across all entries) ──────────────────
+
+[[setting]]
+key = "haUrl"
+type = "string"
+label = "Home Assistant URL"
+description = "e.g. http://hass.lan:8123"
+default = ""
+
+[[setting]]
+key = "haToken"
+type = "string"
+label = "Long-lived access token"
+description = "Generate at Profile → Security → Long-lived access tokens"
+default = ""
+
+# ── Entries ─────────────────────────────────────────────────────────────
+
+[[service]]
+id = "ha"
+entry = "service.luau"
+
+[[widget]]
+id = "status"
+entry = "widget.luau"
+
+[[shortcut]]
+id = "toggle"
+entry = "shortcut.luau"
+
+[[panel]]
+id = "entities"
+entry = "panel.luau"
+width = 400
+height = 520
