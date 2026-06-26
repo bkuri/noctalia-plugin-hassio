@@ -1,0 +1,7 @@
+[settings.haUrl]
+label = "Home Assistant URL"
+description = "e.g. http://hass.lan:8123"
+
+[settings.haToken]
+label = "Long-lived access token"
+description = "Generate at Profile → Security → Long-lived access tokens"

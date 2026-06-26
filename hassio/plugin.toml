@@ -1,8 +1,8 @@
-id = "noctalia/hassio"
+id = "bkuri/hassio"
 name = "Home Assistant"
-version = "0.1.0"
+version = "1.0.0"
 min_noctalia = "5.0.0"
-author = "bk"
+author = "bkuri"
 license = "MIT"
 dependencies = []
 tags = ["home-assistant", "iot", "utility"]
@@ -14,15 +14,15 @@ description = "Monitor and control Home Assistant entities from the bar. Require
 [[setting]]
 key = "haUrl"
 type = "string"
-label = "Home Assistant URL"
-description = "e.g. http://hass.lan:8123"
+label_key = "settings.haUrl.label"
+description_key = "settings.haUrl.description"
 default = ""
 
 [[setting]]
 key = "haToken"
 type = "string"
-label = "Long-lived access token"
-description = "Generate at Profile → Security → Long-lived access tokens"
+label_key = "settings.haToken.label"
+description_key = "settings.haToken.description"
 default = ""
 
 # ── Entries ─────────────────────────────────────────────────────────────
