@@ -9,19 +9,19 @@ tags = ["home-assistant", "iot"]
 icon = "home"
 description = "Monitor and control Home Assistant entities from the bar."
 
-[[service]]
-id = "ha"
-entry = "service.luau"
-
-[[service.setting]]
+[[setting]]
 key = "haUrl"
 type = "string"
 default = ""
 
-[[service.setting]]
+[[setting]]
 key = "haToken"
 type = "string"
 default = ""
+
+[[service]]
+id = "ha"
+entry = "service.luau"
 
 [[widget]]
 id = "status"
